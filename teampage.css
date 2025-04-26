@@ -1,0 +1,60 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* main heading */
+.main-heading{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: blue;
+    margin-top: 20px;
+}
+
+/* main section */
+.main-section{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(3,400px);
+    gap: 10px;
+    position: absolute;
+    left: 200px;
+    /* grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px; */
+}
+
+/* card div */
+.item-cards{
+    background-color: rgb(187, 166, 166);
+    padding: 5px;
+}
+
+/* card img */
+.item-cards img{
+    height: auto;
+    width: 100%;
+    transform: rotate(-1deg);
+}
+
+/* name heading */
+.name{
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* role paragraph */
+.role{
+    color: blueviolet;
+    transform: skew(-15deg);
+}
+
+/* description paragraph */
+.description{
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
