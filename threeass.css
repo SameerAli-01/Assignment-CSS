@@ -1,0 +1,36 @@
+.navbar ul{
+    display: flex;
+    position: sticky;
+    top: 5px;
+    gap: 20px;
+}
+
+.one-div{
+    display: inline;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.tow-div{
+    display: block;
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: black;
+}
+.three-div{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+.four-div{
+    /* display: none; */
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+.four-div:hover{
+    background-color: yellow;
+}
+
