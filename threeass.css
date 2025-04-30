@@ -1,10 +1,55 @@
+/* Navbar styling here. */
 .navbar ul{
     display: flex;
     position: sticky;
     top: 5px;
     gap: 20px;
 }
-
+/* cards styling here. */
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    background-color: seagreen;
+}
+.card-image{
+    transform: skew(1deg);
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}
+.name{
+    font-size: 25px;
+    margin-left: 5px;
+    font-family: sans-serif;
+}
+.role{
+    font-size: 16px;
+    margin-left: 5px;
+    font-family: sans-serif;
+}
+.discription{
+    color: azure;
+    line-height: 1.5;
+    margin-left: 5px;
+}
+.card-but{
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: black;
+    background-color: blueviolet;
+    font-size: 18px;
+}
+.card-but:hover{
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+/* display inline block inline block element styling here. */
 .one-div{
     display: inline;
     height: 100px;
