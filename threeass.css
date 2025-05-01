@@ -12,8 +12,9 @@
     align-items: center;
     gap: 20px;
 }
-.card{
+.card-item{
     background-color: seagreen;
+    border-radius: 10px;
 }
 .card-image{
     transform: skew(1deg);
@@ -39,16 +40,104 @@
 .card-but{
     margin-left: 10px;
     margin-bottom: 15px;
-    border-radius: 5px;
-    color: black;
-    background-color: blueviolet;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
     font-size: 18px;
 }
 .card-but:hover{
-    background-color: black;
-    color: white;
-    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
 }
+/* image-gallery */
+.hallery-heading{
+    font-size: 36px;
+}
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 10px;
+    padding: 10px;
+}
+.image-gallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+img:hover{
+    transform: scale(1.2);
+}
+
+/* form styling here. */
+form{
+    position: absolute;
+    left: 362px;
+    margin-top: 20px;
+    padding: 80px;
+    background-color: blueviolet;
+}
+
+.but-sign{
+    position: relative;
+    left: 380px;
+    bottom: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: azure;
+    color: black;
+    border-radius: 5px;
+}
+
+.but-sign:hover{
+    padding-left: 8px;
+    padding-right: 8px;
+    color: azure;
+    background-color: black;
+}
+
+.login-heading{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.input{
+    padding: 20px;
+    position: relative;
+    bottom: 80px;
+}
+
+.input-type{
+    background-color: white;
+    color: black;
+    padding-right: 5px;
+    padding-right: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.resert-but{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: azure;
+    color: black;
+    border-radius: 5px;
+}
+
+.resert-but:hover{
+    padding-left: 9px;
+    padding-right: 9px;
+    color: azure;
+    background-color: black;
+}
+
 /* display inline block inline block element styling here. */
 .one-div{
     display: inline;

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./threeass.css">
     </head>
     <body>
-<!-- <header id="header"> -->
+<!-- navbar creating -->
     <nav class="navbar">
         <ul>
             <li><a href="#">Home</a></li>
@@ -16,10 +16,10 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-<!-- </header> -->
 
+<!-- card item  -->
     <section class="cards">
-        <div class="card">
+        <div class="card-item card-big">
             <img src="C:\Users\hp\Desktop\MyAss-css\images\premium_photo-01111.jpeg" alt="card-image1" class="card-image">
             <h2 class="name">Sohil</h2>
             <p class="role">Graphic Designer</p>
@@ -27,7 +27,7 @@
             <button class="card-but">click here</button>
         </div>
 
-        <div class="card">
+        <div class="card-item">
             <img src="C:\Users\hp\Desktop\MyAss-css\images\premium_photo-01111.jpeg" alt="card-image2" class="card-image">
             <h2 class="name">Rajat singh</h2>
             <p class="role">Data Analyst</p>
@@ -35,7 +35,7 @@
             <button class="card-but">click here</button>
         </div>
 
-        <div class="card">
+        <div class="card-item">
             <img src="C:\Users\hp\Desktop\MyAss-css\images\premium_photo-01111.jpeg" alt="card-image3" class="card-image">
             <h2 class="name">Himanshu</h2>
             <p class="role">Front-End Developer</p>
@@ -43,7 +43,7 @@
             <button class="card-but">click here</button>
         </div>
 
-        <div class="card">
+        <div class="card-item">
             <img src="C:\Users\hp\Desktop\MyAss-css\images\premium_photo-01111.jpeg" alt="card-image4" class="card-image">
             <h2 class="name">Sudhanhu</h2>
             <p class="role">Full-Stack Developer</p>
@@ -53,43 +53,61 @@
 
     </section>
 
+<!-- image gallery -->
+<h2 class="hallery-heading">Image Gallery</h2>
+ <div class="image-gallery">
+    <img src="https://plus.unsplash.com/premium_photo-1710865692399-6fe10f968711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" alt="image1"> 
+    <img src="https://plus.unsplash.com/premium_photo-1710865692399-6fe10f968711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" alt="image2">
+    <img src="https://plus.unsplash.com/premium_photo-1710865692399-6fe10f968711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" alt="image3">
+    <img src="https://plus.unsplash.com/premium_photo-1710865692399-6fe10f968711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" alt="image4">
+    <img src="https://plus.unsplash.com/premium_photo-1710865692399-6fe10f968711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" alt="image5">
+    <img src="https://plus.unsplash.com/premium_photo-1710865692399-6fe10f968711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" alt="image6">
+ </div>
+
+<!-- form creating -->
     <secttion class="form-section">
-        
         <form action="">
-            <div>
-                <label for="name">Name:- </label>
-                <input type="text" placeholder="Enter Your Name">
+            <button class="but-sign">sign in</button>
+            <button class="but-sign">sign up</button>
+            <h2 class="login-heading">Log in</h2>
+
+            <div class="input">
+                <label for="name first">Enter first name</label><br>
+                <input type="text" placeholder="Enter Your Name" id="name first" class="input-type">
             </div>
 
-            <div>
-                <label for="name">Email:- </label>
-                <input type="text" placeholder="Enter Your Email">
+            <div class="input">
+                <label for="name last">Enter last name </label><br>
+                <input type="text" placeholder="Enter Your Email" id="name last" class="input-type">
     
             </div>
 
-            <div>
-                <label for="name">Address:- </label>
-                <input type="password" placeholder="Enter Your Address">
+            <div class="input">
+                <label for="pass">Enter your password</label><br>
+                <input type="password" placeholder="Enter your password" id="pass" class="input-type">
             </div>
 
-            <div>
-                <label for="name">First Name:- </label>
-                <input type="phone" placeholder="Enter Phone Number">
+            <div class="input">
+                <label for="phone">Enter your number</label><br>
+                <input type="phone" placeholder="Enter Phone Number" id="phone" class="input-type">
             </div>
-         <button>Send Message</button>
 
+            <div class="input">
+                <label for="email">Enter your email</label><br>
+                <input type="email" placeholder="Enter Phone email" id="phone" class="input-type">
+            </div>
+
+         <button class="resert-but">resert</button>
         </form>
     </secttion>
 
-        <!-- <div class="container">
-            <div class="one-div">one</div>
-            <div class="tow-div">Tow</div>
-            <div class="three-div">Three</div>
-            <div class="four-div">Four</div>    
-        </div> -->
-
-        
-        
-
+    <!-- <section>
+        <div class="container">
+          <div class="one-div">one</div>
+          <div class="tow-div">Tow</div>
+          <div class="three-div">Three</div>
+          <div class="four-div">Four</div>    
+        </div>
+    </section> -->
     </body>
 </html>
