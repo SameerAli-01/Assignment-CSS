@@ -7,15 +7,21 @@
         <link rel="stylesheet" href="./threeass.css">
     </head>
     <body>
-<!-- navbar creating -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+     <!-- Its a header and navbar.. -->
+     <header class="header">
+        <h1 class="main-heading">
+          my <span class="span-head">Ass.&hearts;</span>
+        </h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
 <!-- card item  -->
     <section class="cards">
@@ -45,10 +51,13 @@
 
         <div class="card-item">
             <img src="C:\Users\hp\Desktop\MyAss-css\images\premium_photo-01111.jpeg" alt="card-image4" class="card-image">
-            <h2 class="name">Sudhanhu</h2>
-            <p class="role">Full-Stack Developer</p>
-            <p class="discription">My name is Sudhanhu <br> i'm full-stack develper</p>
-            <button class="card-but">click here</button>
+            <div class="card-content">
+                <h2 class="name">Sudhanhu</h2>
+                <p class="role">Full-Stack Developer</p>
+                <p class="discription">My name is Sudhanhu <br> i'm full-stack develper</p>
+                <button class="card-but">click here</button>
+            </div>
+            
         </div>
 
     </section>
@@ -72,13 +81,13 @@
             <h2 class="login-heading">Log in</h2>
 
             <div class="input">
-                <label for="name first">Enter first name</label><br>
+                <label for="name first">Enter your name</label><br>
                 <input type="text" placeholder="Enter Your Name" id="name first" class="input-type">
             </div>
 
             <div class="input">
                 <label for="name last">Enter last name </label><br>
-                <input type="text" placeholder="Enter Your Email" id="name last" class="input-type">
+                <input type="text" placeholder="Enter last name" id="name last" class="input-type">
     
             </div>
 
@@ -88,13 +97,13 @@
             </div>
 
             <div class="input">
-                <label for="phone">Enter your number</label><br>
+                <label for="phone">Enter phone number</label><br>
                 <input type="phone" placeholder="Enter Phone Number" id="phone" class="input-type">
             </div>
 
             <div class="input">
                 <label for="email">Enter your email</label><br>
-                <input type="email" placeholder="Enter Phone email" id="phone" class="input-type">
+                <input type="email" placeholder="Enter your email" id="phone" class="input-type">
             </div>
 
          <button class="resert-but">resert</button>

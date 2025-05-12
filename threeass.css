@@ -1,20 +1,61 @@
-/* Navbar styling here. */
-.navbar ul{
-    display: flex;
-    position: sticky;
-    top: 5px;
-    gap: 20px;
+/* header Navbar styling here. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body{
+    font-family: Times, serif;
+}
+.header{
+    z-index: 1;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    align-content: center;
+}
+.main-heading{
+    color: blueviolet;
+    margin-left: 5px;
+}
+.span-head{
+    color: aqua;
+}
+
+.navbar ul{
+    /* margin-right: 50px; */
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    position: relative;
+    bottom: 20px;
+    list-style: none;
+}
+.navbar ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px 5px white;
+}
+
 /* cards styling here. */
 .cards{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 80px;
 }
 .card-item{
     background-color: seagreen;
     border-radius: 10px;
+}
+.card-content{
+    padding: 10px;
 }
 .card-image{
     transform: skew(1deg);
@@ -40,15 +81,18 @@
 .card-but{
     margin-left: 10px;
     margin-bottom: 15px;
-    border-radius: 8px;
-    color: white;
-    background-color: black;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 18px;
 }
 .card-but:hover{
-    background-color: white;
-    color: black;
-    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 1px 2px 2px 3px white;
 }
 /* image-gallery */
 .hallery-heading{
@@ -66,7 +110,7 @@
     border-radius: 8px;
     object-fit: cover;
 }
-img:hover{
+.image-gallery img:hover{
     transform: scale(1.2);
 }
 
@@ -93,10 +137,11 @@ form{
 }
 
 .but-sign:hover{
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
     color: azure;
     background-color: black;
+    box-shadow: 1px 2px 2px 3px white;
 }
 
 .login-heading{
@@ -136,6 +181,7 @@ form{
     padding-right: 9px;
     color: azure;
     background-color: black;
+    box-shadow: 1px 2px 2px 3px white;
 }
 
 /* display inline block inline block element styling here. */
