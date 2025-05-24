@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: red;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: all .5s ease;
+}
+.container h1{
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: black;
+}
+
+#check{
+    display: none;
+}
+
+label #but,label #cancel{
+    position: absolute;
+    background-color: blue;
+    cursor: pointer;
+}
+
+label #but{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: red;
+    padding: 6px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: 195px;
+    top: 17px;
+    font-size: 30px;
+    color: red;
+    padding: 4px 9px;
+    /* transition: all .5s ease; */
+}
+
+#check:checked ~ .container{
+    left: 0;
+
+}
+
+#check:checked ~ label #but{
+    left: 250;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
