@@ -15,19 +15,49 @@
     font-size: 20px;
 }
 
-.header{grid-area: header; background: blue;}
+.header{
+    background-color: red;
+}
+.banner{
+    background-color: blue;
+}
+.left-aside{background-color:  brown;}
 
-.banner{grid-area: banner; background: blueviolet;}
+.main{background-color:  chartreuse;}
 
-.left-aside{grid-area: left-aside; background: brown;}
+.right-aside{background-color:  darkred;}
 
-.main{grid-area: main; background: chartreuse;}
+.low-content{background-color:  dodgerblue;}
 
-.right-aside{grid-area: right-aside; background: darkred;}
+.footer{background-color:  mediumvioletred;}
 
-.low-content{grid-area: low-content; background: dodgerblue;}
+.header{grid-area: header; 
+    /* background: blue; */
+}
 
-.footer{grid-area: footer; background: mediumvioletred;}
+.banner{grid-area: banner;
+     /* background: blueviolet; */
+}
+
+.left-aside{grid-area: left-aside; 
+    /* background: brown; */
+}
+
+.main{grid-area: main; 
+    /* background: chartreuse; */
+}
+
+.right-aside{grid-area: right-aside; 
+    /* background: darkred; */
+}
+
+.low-content{grid-area: low-content; 
+    /* background: dodgerblue; */
+}
+
+.footer{grid-area: footer; 
+    /* background: mediumvioletred; */
+}
 
 @media (max-width: 678px) {
 .container{

@@ -13,7 +13,7 @@
 }
 .container h1{
     font-size: 27px;
-    color: white;
+    color: white; 
     text-align: center;
     line-height: 70px;
     background-color: black;
@@ -22,6 +22,10 @@
 #check{
     display: none;
 }
+
+/* #cancel{
+    display: none;
+} */
 
 label #but,label #cancel{
     position: absolute;
