@@ -346,7 +346,7 @@ body{
     color: white;
 }
 
-@media (max-width: 676px){
+/* @media (max-width: 676px){
     .container{
     grid-template-rows: 150px 1fr 1fr;
     grid-template-columns: 1fr;
@@ -356,4 +356,4 @@ body{
     "port-content"
     "social-media";
     }
-}
+} */
