@@ -1,10 +1,18 @@
 *{
     margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 16;
     font-family: sans-serif;
 }
 .container{
     margin-inline: 2rem;
     display: grid;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
 h1{
@@ -21,7 +29,7 @@ h1{
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    /* margin-bottom: 1.5rem; */
+    margin-bottom: 1.5rem;
 }
 
 .box-one{
@@ -38,4 +46,26 @@ h1{
 }
 .box-five{
     background-color: deeppink;
+}
+
+@media (min-width: 600px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-item{
+        min-height: 300px;
+    }
+    .box-one, .box-five{
+        grid-column-start: span 2;
+    }
+    .box-three{
+        grid-row-start: span 2;
+    }
+}
+
+@media (min-width: 1000px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
 }
