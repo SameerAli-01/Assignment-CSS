@@ -34,21 +34,21 @@
     padding: 40px;
 }
 
-.header-contant{
+.header-content{
     padding: 20px;
 }
 
-.header-contant h1{
+.header-content h1{
     padding: 20px 0px 20px 0px;
     font-size: 46px;
 }
 
-.header-contant p{
+.header-content p{
     padding-bottom: 20px;
     line-height: 1.5;
 }
 
-.header-contant button{
+.header-content button{
     background-color: antiquewhite;
     color: black;
     border: 2px solid black;
@@ -56,11 +56,11 @@
     border-radius: 5px;
     font-weight: 700;
 }
-.header-contant button i{
+.header-content button i{
     font-size: 20px;
 }
 
-.header-contant button:hover{
+.header-content button:hover{
     background-color: black;
     color: aliceblue;
     transition: all 1s ease-in;
@@ -84,16 +84,16 @@
     border-radius: 7px;
 }
 
-.read-contant{
+.read-content{
     width: 630px;
     padding-top: 20px;
 }
 
-.read-contant h2{
+.read-content h2{
     font-size: 40px;
 }
 
-.read-contant p{
+.read-content p{
     padding: 20px 0px 20px 0px;
 }
 /* read together style end */
@@ -109,12 +109,12 @@
     border-radius: 7px;
 }
 
-.average-contant h2{
+.average-content h2{
     font-size: 40px;
     padding: 40px 0px 0px 20px;
 }
 
-.average-contant p{
+.average-content p{
         padding: 20px 0px 0px 20px;
         line-height: 1.5;
 }
@@ -133,7 +133,7 @@
     padding: 15px 0px 30px 0px;
 }
 
-.journey-contant{
+.journey-content{
     display: flex;
     justify-content: space-around;
 }
@@ -346,3 +346,277 @@
     cursor: pointer;
 }
 /* footer style end */
+
+/* reponsive for tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header-content {
+    text-align: start;
+    padding: 10px;
+  }
+
+  .header-content h1 {
+    font-size: 36px;
+  }
+
+  .header-image img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .read-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .read-image img {
+    width: 100%;
+  }
+
+  .read-content {
+    width: 90%;
+    text-align: start;
+  }
+
+  .average-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .average-image img {
+    width: 100%;
+  }
+
+  .average-content {
+    text-align: start;
+    padding: 20px 0;
+  }
+
+  .journey-heading h2{
+    text-align: start;
+  }
+
+  .journey-content {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+   .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: 10px;
+  }
+
+  .card-starter,
+  .card-pro,
+  .card-enterorise {
+    width: 48%;
+    min-width: 280px;
+    height: 350px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .card-pro {
+    background-image: none; /* remove gradient for uniformity */
+    background-color: aliceblue;
+    margin-top: 10px;
+  }
+
+  .card-pro button{
+    background-color: aliceblue;
+  }
+
+  .card-enterorise {
+    order: 3;
+    width: 48%;
+  }
+
+  .activity-section h2 {
+    font-size: 24px;
+    padding: 20px;
+    text-align: start;
+  }
+
+  .footer-section h2 {
+    font-size: 28px;
+  }
+
+  .foot-but {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* responsive for phone */
+@media (max-width: 767px) {
+
+  .header-container {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+
+  .header-content {
+    text-align: start;
+    padding: 10px;
+  }
+
+  .header-content h1 {
+    font-size: 28px;
+  }
+
+  .header-image img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .read-section {
+    flex-direction: column-reverse;
+    /* align-items: start; */
+    /* padding: 20px; */
+  }
+
+  .read-image img {
+    width: 100%;
+  }
+
+  .read-content {
+    width: 100%;
+    text-align: start;
+  }
+
+  .read-content h2 {
+    font-size: 28px;
+  }
+
+  .average-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .average-image img {
+    width: 100%;
+  }
+
+  .average-content {
+    text-align: start;
+    padding: 10px;
+  }
+
+  .average-content h2 {
+    font-size: 28px;
+  }
+
+  .journey-section {
+    padding: 20px;
+  }
+
+  .journey-heading h2 {
+    font-size: 28px;
+    text-align: start;
+  }
+
+  .journey-content {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .card-starter,
+  .card-pro,
+  .card-enterorise {
+    width: 95%;
+    height: 350px;
+    padding: 40px;
+  }
+
+  .card-starter p{
+    padding: 20px;
+  }
+
+  .card-starter button{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .card-enterorise p{
+    padding: 20px;
+  }
+
+  .card-enterorise button{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .card-enterorise h4{
+   padding: 20px 0px 20px 20px;
+  }
+
+  .card-pro {
+    width: 95%;
+  }
+
+  .card-pro p{
+    padding: 20px;
+  }
+
+  .card-pro button{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .activity-section h2 {
+    font-size: 20px;
+    padding: 20px;
+    text-align: start;
+  }
+
+  .footer-section {
+    padding: 20px;
+  }
+
+  .footer-section h2 {
+    font-size: 26px;
+  }
+
+  .foot-but {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .foot-copyright {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon-container {
+    gap: 15px;
+  }
+}
