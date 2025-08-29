@@ -5,6 +5,7 @@
 }
 .container{
     background-image: linear-gradient(to right, rgb(19, 19, 29), rgb(198, 198, 240) , rgb(112, 112, 240));
+    padding: 40px;
 }
 
 /* header style */
@@ -84,6 +85,11 @@
     border-radius: 7px;
 }
 
+.read-image img:hover{
+    transform: scale(0.9);
+    transition: all 1s ease-in;
+}
+
 .read-content{
     width: 630px;
     padding-top: 20px;
@@ -107,6 +113,11 @@
 .average-image img{
     width: 100%;
     border-radius: 7px;
+}
+
+.average-image img:hover{
+    transform: scale(0.9);
+    transition: all 1s ease-in;
 }
 
 .average-content h2{
